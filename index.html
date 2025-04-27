@@ -10,6 +10,10 @@
     /* RTX-ON */
     /* completely redone toggle and droid */
 
+    html {
+      background-color: transparent !important; /* Ensure the root element is transparent */
+    }
+
     .bb8-toggle {
       --toggle-size: 16px;
       /* finally I removed the scale now everything depends on the font-size */
@@ -957,7 +961,7 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background-color: transparent; /* Changed to transparent for Notion compatibility */
+      background-color: transparent !important; /* Ensure transparency */
     }
   </style>
 </head>
