@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transparent Dangling Ball Widget</title>
   <style>
-    /* Reset default margins and ensure widget is self-contained */
+    /* Reset default margins and ensure surrounding area is transparent */
     body {
       margin: 0;
       padding: 0;
-      background: transparent; /* Ensure body is transparent */
+      background: transparent;
     }
 
-    /* Loader container */
+    /* Loader container with green interior */
     .loader {
       position: relative;
-      background: transparent; /* Transparent background */
+      background: limegreen; /* Green interior */
+      color: white; /* White text, if any */
       padding-left: 1.5em;
       padding-right: 1.5em;
       padding-top: 3em;
@@ -23,7 +24,7 @@
       border-radius: 25px;
       z-index: -1;
       box-shadow: 5px 2px 0px rgba(102, 102, 102, 0.5); /* Semi-transparent shadow */
-      display: inline-block; /* Prevent unnecessary stretching */
+      display: inline-block; /* Prevent stretching */
     }
 
     /* Clock SVG */
