@@ -23,12 +23,20 @@
             html, body {
                 background-color: #414141;
             }
+            /* Adjust widget's internal black elements to match Notion's dark mode background */
+            .notion-dark-bg {
+                fill: #191919 !important;
+            }
         }
 
         /* Light mode preference */
         @media (prefers-color-scheme: light) {
             html, body {
                 background-color: #ffffff;
+            }
+            /* Slightly lighter shade for widget's black elements in light mode */
+            .notion-dark-bg {
+                fill: #333333 !important;
             }
         }
 
@@ -204,16 +212,18 @@
                     id="particles"
                 ></polygon>
                 <polygon
+                    class="notion-dark-bg"
                     stroke-width="2"
                     stroke=""
-                    fill="#191919"
+                    fill="#292d34"
                     points="29.5,99.8 100,142 100,172 29.5,130"
                 ></polygon>
                 <polygon
+                    class="notion-dark-bg"
                     transform="translate(50, 92)"
                     stroke-width="2"
                     stroke=""
-                    fill="#191919"
+                    fill="#1f2127"
                     points="50,50 120.5,8 120.5,35 50,80"
                 ></polygon>
             </g>
