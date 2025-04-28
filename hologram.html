@@ -5,23 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated SVG</title>
     <style>
-        .container {
+        /* Reset default margins and set full height */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             /* Default background for light mode */
             background-color: #ffffff;
         }
 
         /* Dark mode preference */
         @media (prefers-color-scheme: dark) {
-            .container {
+            html, body {
                 background-color: #414141;
             }
         }
 
         /* Light mode preference */
         @media (prefers-color-scheme: light) {
-            .container {
+            html, body {
                 background-color: #ffffff;
             }
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
         }
 
         @keyframes bounce {
